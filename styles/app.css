@@ -11,3 +11,122 @@
 body{
   font-family: 'Nunito', sans-serif;
 }
+h4{
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 38px;
+}
+.btn-primary{
+  background: #111111;
+  border-radius: 74px;
+  color: white;
+  /* padding-inline: 84px; */
+  padding-block: 12px;
+}
+.btn-secondary{
+  background: #FFFFFF;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  box-sizing: border-box;
+  border-radius: 74px;
+  color: black;
+  /* padding-inline: 150px; */
+  padding-block: 12px;
+  margin-block: 8px;
+}
+/* hero */
+.hero{
+  background-color: white;
+  padding-inline: 55px ;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.options a{
+  padding-left: 40px;
+  color: black;
+  text-decoration:none;
+}
+.options-icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.options-icons img{
+  padding-inline: 12px;
+}
+.buscador{
+  width: 200px;
+  height: 40px;
+  background: #F5F5F5;
+  border-radius: 100px;
+  padding-block: 8px;
+  padding-inline: 16px;
+  display: flex;
+  align-items: center;
+}
+.buscador i{
+  color: #757575;
+  opacity: 0.2;
+}
+.buscador img{
+  padding-inline: 8px;
+}
+/* Fin de hero */
+.wrapper{
+  padding-inline: 55px;
+  padding-block: 40px;
+}
+/* card-view */
+.info-view{
+  padding-inline: 55px;
+}
+.price-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.colors-view{
+  padding-block-end: 40px;
+}
+.card-view{
+  display: grid;
+  grid-template-columns: 1fr 1fr 400px 1fr ;
+
+}
+.imagen-view{
+  display: grid;
+  grid-template: repeat(2, 500px) / repeat(2, 400px) ;
+}
+.imagen-view img{
+  max-width: 397px;
+  max-height: 496px;
+  gap: 16px 16px;
+}
+.title-talla{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.guia{
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(3, 125px) ;
+  gap: 8px 8px;
+}
+.guia-items{
+  background: #FFFFFF;
+  border: 1px solid rgba(117, 117, 117, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 125px;
+  height: 48px;
+  padding: 12px 10px;
+}
+.descripcion{
+  margin-block: 16px;
+  display: flex;
+  flex-direction: column;
+}
+/* Fin de card-view */
