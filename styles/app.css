@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 :root {
     --primary: #2FB464;
     --secondary:  #808080;
@@ -15,6 +11,10 @@ h4{
   font-weight: 800;
   font-size: 28px;
   line-height: 38px;
+  margin: 0;
+}
+a{
+  color: var(--secondary);
 }
 .btn-primary{
   background: #111111;
@@ -22,6 +22,7 @@ h4{
   color: white;
   /* padding-inline: 84px; */
   padding-block: 12px;
+  font-weight: 800;
 }
 .btn-secondary{
   background: #FFFFFF;
@@ -32,6 +33,11 @@ h4{
   /* padding-inline: 150px; */
   padding-block: 12px;
   margin-block: 8px;
+  font-weight: 800;
+  align-items: center;
+}
+.btn-secondary img{
+  height: 60%;
 }
 /* hero */
 .hero{
@@ -75,12 +81,12 @@ h4{
 }
 /* Fin de hero */
 .wrapper{
-  padding-inline: 55px;
-  padding-block: 40px;
+  padding-inline: 16px;
+  padding-block: 24px;
 }
 /* card-view */
 .info-view{
-  padding-inline: 55px;
+  padding-inline: 16px;
 }
 .price-view{
   display: flex;
@@ -90,18 +96,29 @@ h4{
 }
 .colors-view{
   padding-block-end: 40px;
-}
-.card-view{
+}  .card-view{
   display: grid;
-  grid-template-columns: 1fr 1fr 400px 1fr ;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns:  auto minmax(400px, 1fr) ;
+  /* grid-template-columns:  auto 400px ; */
 
+}
+.imagen-view, .info-view{
+
+  display: grid;
+  flex: 0 1 150px;
+}
+.main{
+  display: grid;
+   place-items: center;
 }
 .imagen-view{
   display: grid;
   grid-template: repeat(2, 500px) / repeat(2, 400px) ;
 }
 .imagen-view img{
-  max-width: 397px;
+  max-width: auto;
   max-height: 496px;
   gap: 16px 16px;
 }
@@ -114,6 +131,7 @@ h4{
   display: grid;
   grid-template: repeat(5, 1fr) / repeat(3, 125px) ;
   gap: 8px 8px;
+  justify-content: center;
 }
 .guia-items{
   background: #FFFFFF;
@@ -130,3 +148,86 @@ h4{
   flex-direction: column;
 }
 /* Fin de card-view */
+
+
+/* carrusel */
+.slider {
+}
+
+.slider-container {
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+.card {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: black;
+  border-radius: 50%;
+}
+
+.card img{
+  max-height: 385px;
+}
+/* Fin de carrusel */
+
+/* footer   */
+
+.footer{
+  background-color: black;
+  padding: 64px 55px ;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.footer-group1{
+  display: flex;
+  flex-direction: row;
+}
+.footer-menu{
+  display: flex;
+  flex-direction: column;
+  margin-inline-end: 64px
+}
+.footer-menu h5{
+  color: white;
+  font-weight: 800;
+}
+.footer-menu a{
+  color: white;
+  text-decoration: none;
+}
+.footer-icons{
+  display: flex;
+  flex-direction: row;
+}
+.icon-circle{
+  width: 48px;
+  height: 48px;
+  background-color: grey;
+  border-radius: 100%;
+  margin-inline-end: 24px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Fin de footer   */
