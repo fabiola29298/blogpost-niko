@@ -156,10 +156,11 @@ a{
 
 .slider-container {
   overflow: auto;
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   white-space: nowrap;
   display: flex;
   flex-direction: row;
+  width: 80%;
 }
 .card {
   margin: 10px;
@@ -212,8 +213,10 @@ a{
   font-weight: 800;
 }
 .footer-menu a{
-  color: white;
+  color:  #757575;
+  line-height: 24px;
   text-decoration: none;
+  margin-block-end: 16px
 }
 .footer-icons{
   display: flex;
