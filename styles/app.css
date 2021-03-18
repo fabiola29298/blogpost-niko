@@ -96,15 +96,22 @@ a{
 }
 .colors-view{
   padding-block-end: 40px;
-}  .card-view{
+}
+.card-view{
   display: grid;
   flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns:  auto minmax(400px, 1fr) ;
-  /* grid-template-columns:  auto 400px ; */
+  /* grid-template-columns:  auto minmax(400px, 1fr) ; */
+  grid-template-columns:  auto 400px ;
 
 }
-.imagen-view, .info-view{
+.tendencias{
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  grid-template-columns:  minmax(1fr, 1256px );
+}
+.imagen-view, .info-view, .carrusel{
 
   display: grid;
   flex: 0 1 150px;
@@ -114,8 +121,17 @@ a{
    place-items: center;
 }
 .imagen-view{
-  display: grid;
-  grid-template: repeat(2, 500px) / repeat(2, 400px) ;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* grid-template-columns: 400px, 400px ; */
+  /* grid-template-rows: 400px, 400px ; */
+   /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
+  /* grid-template: repeat(2, 500px) / repeat(2, 400px) ; */
+}
+.child-view{
+  flex: 0 1 150px;
+  margin: 5px;
 }
 .imagen-view img{
   max-width: auto;
@@ -152,6 +168,7 @@ a{
 
 /* carrusel */
 .slider {
+  display: grid;
 }
 
 .slider-container {
@@ -160,7 +177,7 @@ a{
   white-space: nowrap;
   display: flex;
   flex-direction: row;
-  width: 80%;
+  /* width: 95%; */
 }
 .card {
   margin: 10px;
