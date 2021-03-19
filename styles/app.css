@@ -324,6 +324,8 @@ a{
   border: 1px solid #757575;
   opacity: 0.2;
   margin-block: 32px;
+}.favoritos{
+  padding: 16px;
 }
 .resumen-view{
   display: flex;
@@ -415,5 +417,17 @@ a{
     flex-direction: row;
   }
   /* Fin de footer   */
+  /* CARRITO */
 
+  .producto-card{
+    display: flex;
+    flex-direction: column;
+  }
+  .producto-card img{
+    height: 150px;
+    margin-block: 16px;
+  }
+  .envio-card{
+    padding-block-start: 16px;
+  }
 }
