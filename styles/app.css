@@ -262,6 +262,83 @@ a{
 
 /* Fin de footer   */
 
+/* CARRITO */
+.compra-view{
+  margin-inline:16px;
+}
+.miembro-card{
+  border: 1px solid #757575;
+  padding: 16px;
+  margin-block-end: 40px;
+}
+.miembro-card h3{
+  color: #FA5400;
+  margin:0;
+  font-size: 28px;
+}
+.miembro-card p{
+  color: #757575;
+  font-size: 16px;
+  margin:0;
+}
+.producto-card{
+  display: flex;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.producto-card img{
+  display: flex;
+  height: 128px;
+}
+.info-producto-card{
+  margin-inline: 16px;
+  width: 100%;
+}
+.titulo-producto-card, .costo-child, .costo-child-negrilla{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.costo-child p, .costo-child-negrilla p{
+  margin-block: 8px;
+
+}
+.costo-child-negrilla{
+  font-weight: 800;
+}
+.info-producto-card p{
+  color: #757575;
+  margin: 4px;
+}
+.info-producto-card span, .titulo-producto-card p{
+  margin: 4px;
+  color: #111111;
+}
+.envio-card{
+  padding-block-start: 55px;
+}
+.linea{
+  border: 1px solid #757575;
+  opacity: 0.2;
+  margin-block: 32px;
+}
+.resumen-view{
+  display: flex;
+  flex-direction: column;
+}
+.resumen-view .btn-primary, .resumen-view .btn-secondary{
+  margin-block: 8px;
+}
+.pay{
+  color: #21468C;
+}
+.pal{
+  color: #5183e0;
+
+}
 /* Mobile Styles */
 @media only screen and (max-width: 450px) {
    .options{
