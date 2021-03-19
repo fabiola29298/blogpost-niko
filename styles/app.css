@@ -6,6 +6,8 @@
 }
 body{
   font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 h4{
   font-weight: 800;
@@ -265,19 +267,33 @@ a{
    .options{
      display: none;
    }
+
+  /* hero */
+
   .hero{
     padding-inline: 16px ;
   }
+  .options a{
+    padding-left: 10px;
+  }
+  .options-icons img{
+    padding-inline: 6px;
+  }
+  .buscador{
+    width: 100px;
+    height: 25px;
+  }
+  /* Fin de hero */
   .wrapper{
     padding-inline: 0;
     padding-block: 0;
   }
-
-
-
   /* card-view */
   .info-view{
     padding-inline: 0;
+  }
+  .title-view{
+    /* display: none; */
   }
   .colors-view{
     padding-block-end: 0;
@@ -286,7 +302,7 @@ a{
     max-height:320px;
   }
   .guia{
-    grid-template: repeat(5, 1fr) / repeat(3, 1fr) ;
+    grid-template: repeat(5, 1fr) / repeat(2, 1fr) ;
   }
   .guia-items{
     width: 1fr;
